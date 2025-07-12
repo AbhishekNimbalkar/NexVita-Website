@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AdminWorkProcess from "../../Pages/Admin/AdminWorkProcess"; // Corrected path to components
 import AdminChangeCredentials from "./AdminChangeCredentials"; // Import the new component
+import AdminPortfolio from "./AdminPortfolio";
 
 const AdminDashboard = () => {
   return (
@@ -18,12 +19,7 @@ const AdminDashboard = () => {
         />
         {/* Add route for Admin Settings */}
         <Route path="/settings" element={<AdminChangeCredentials />} />
-        {/* Add other specific routes like 'users', 'portfolio', 'testimonials' here if you create those components */}
-        {/* Example:
-        <Route path="/users" element={<AdminManageUsers />} />
-        <Route path="/portfolio" element={<AdminPortfolio />} />
-        <Route path="/testimonials" element={<AdminTestimonials />} />
-        */}
+        <Route path="/Portfolio" element={<AdminPortfolio />} />
       </Routes>
     </div>
   );

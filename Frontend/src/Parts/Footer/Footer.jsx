@@ -21,7 +21,7 @@ function Footer() {
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center space-x-6 md:space-x-10 text-lg font-medium mb-8">
           <Link
-            to="/works"
+            to="/portfolio"
             className="hover:text-yellow-500 transition duration-200"
           >
             Works

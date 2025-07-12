@@ -14,6 +14,7 @@ import AdminLogin from "./Pages/Admin/AdminLogin"; // Import the new login compo
 
 // Import the CompanyLogoProvider (assuming you have it set up in context/CompanyLogoContext.js)
 import { CompanyLogoProvider } from "./context/CompanyLogoContext";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 
 function App() {
   const location = useLocation();
@@ -59,6 +60,10 @@ function App() {
             {/* Public Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />{" "}
+            {/* Optional: For "See All Projects" button */}
+            <Route path="/portfolio/:id" element={<Portfolio />} />{" "}
+            {/* Route for individual project details */}
             <Route
               path="/works"
               element={
@@ -133,7 +138,6 @@ function App() {
                 </div>
               }
             />
-
             {/* Admin Routes */}
             {/* If not authenticated, show login page for /admin path */}
             {!isAdminAuthenticated ? (

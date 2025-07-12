@@ -6,7 +6,7 @@ const path = require("path");
 
 const adminRoutes = require("./routes/adminRoutes");
 const companyLogoRoutes = require("../Backend/routes/companyLogoRoutes");
-
+const portfolioRoutes = require("./routes/portfolioRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -26,6 +26,7 @@ app.use(
   "/uploads",
   express.static(path.join(__dirname, process.env.UPLOAD_FOLDER))
 );
+app.use("/api/portfolio", portfolioRoutes);
 
 // MongoDB Connection
 mongoose
