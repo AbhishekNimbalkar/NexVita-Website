@@ -7,6 +7,7 @@ const path = require("path");
 const adminRoutes = require("./routes/adminRoutes");
 const companyLogoRoutes = require("../Backend/routes/companyLogoRoutes");
 const portfolioRoutes = require("./routes/portfolioRoutes");
+const testimonialRoutes = require("./routes/testimonialRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -37,7 +38,7 @@ mongoose
 // Routes
 app.use("/api/company-logos", companyLogoRoutes);
 app.use("/api/admin", adminRoutes);
-
+app.use("/api/testimonials", testimonialRoutes); // New: Use testimonial routes
 app.get("/", (req, res) => {
   res.send("Work Process API is running");
 });

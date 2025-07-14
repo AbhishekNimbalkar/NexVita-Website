@@ -60,7 +60,7 @@ function MainInterface() {
               Connect With Us
             </Link>
             <Link
-              to="/works"
+              to="/portfolio"
               className="bg-transparent text-[#6854FC]
     font-inter font-semibold text-[22px] leading-[160%] tracking-normal capitalize
     hover:text-purple-700

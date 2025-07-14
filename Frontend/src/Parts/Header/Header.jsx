@@ -161,6 +161,13 @@ function Header() {
               Blogs
             </Link>
             <Link
+              to="/Testimonials"
+              onClick={closeMenu}
+              className="font-inter font-normal text-[20px] leading-[140%] tracking-normal text-black hover:text-blue-400 transition duration-200"
+            >
+              Testimonials
+            </Link>
+            <Link
               to="/terms"
               onClick={closeMenu}
               className="font-inter font-normal text-[20px] leading-[140%] tracking-normal text-black hover:text-blue-400 transition duration-200"

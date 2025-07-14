@@ -228,7 +228,7 @@ const AdminPortfolio = () => {
       )}
 
       {!loading && !error && portfolioItems.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {portfolioItems.map((project) => (
             <div
               key={project._id}
@@ -254,14 +254,14 @@ const AdminPortfolio = () => {
                 <div className="flex justify-end space-x-2">
                   <button
                     onClick={() => openEditModal(project)}
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-full transition duration-200"
+                    className="text-blue-500 hover:text-blue-700 transition duration-300"
                     title="Edit Project"
                   >
                     <Edit size={18} />
                   </button>
                   <button
                     onClick={() => handleDelete(project._id)}
-                    className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full transition duration-200"
+                    className="text-red-500 hover:text-red-700 transition duration-300"
                     title="Delete Project"
                   >
                     <Trash2 size={18} />
@@ -367,13 +367,13 @@ const AdminPortfolio = () => {
                 <button
                   type="button"
                   onClick={() => setIsModalOpen(false)}
-                  className="bg-[#6854FC] hover:bg-[#5744e6] text-white font-bold py-2 px-4 rounded-full transition duration-200"
+                  className="mt-6 w-full md:w-auto bg-[#0A142F] text-white px-8 py-3 rounded-xl hover:bg-blue-700 transition duration-300 font-bold text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-[#6854FC] hover:bg-[#5744e6] text-white font-bold py-2 px-4 rounded-full transition duration-200"
+                  className="mt-6 w-full md:w-auto bg-[#0A142F] text-white px-8 py-3 rounded-xl hover:bg-blue-700 transition duration-300 font-bold text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
                   disabled={loading}
                 >
                   {loading

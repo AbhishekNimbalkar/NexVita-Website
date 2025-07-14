@@ -6,7 +6,7 @@ const GlobalTeam = () => {
     <>
       {/* New "Join a global team" section */}
       {/* The outer div maintains its responsive container properties */}
-      <div className="container mx-auto mt-24">
+      <div className="container mx-auto mt-24 ">
         {/* The inner div's background is adjusted to a subtle gray,
             approximating rgba(196, 196, 196, 0.15) which is a very light, almost transparent gray.
             We use bg-gray-50 as a common Tailwind class for a very subtle off-white/light gray.

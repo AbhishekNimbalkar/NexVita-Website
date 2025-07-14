@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import AdminWorkProcess from "../../Pages/Admin/AdminWorkProcess"; // Corrected path to components
 import AdminChangeCredentials from "./AdminChangeCredentials"; // Import the new component
 import AdminPortfolio from "./AdminPortfolio";
+import AdminTestimonials from "./AdminTestimonials";
 
 const AdminDashboard = () => {
   return (
@@ -20,6 +21,7 @@ const AdminDashboard = () => {
         {/* Add route for Admin Settings */}
         <Route path="/settings" element={<AdminChangeCredentials />} />
         <Route path="/Portfolio" element={<AdminPortfolio />} />
+        <Route path="/Testimonials" element={<AdminTestimonials />} />
       </Routes>
     </div>
   );

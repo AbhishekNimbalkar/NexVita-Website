@@ -15,6 +15,7 @@ import AdminLogin from "./Pages/Admin/AdminLogin"; // Import the new login compo
 // Import the CompanyLogoProvider (assuming you have it set up in context/CompanyLogoContext.js)
 import { CompanyLogoProvider } from "./context/CompanyLogoContext";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import Testimonials from "./Pages/Home/Testimonials";
 
 function App() {
   const location = useLocation();
@@ -112,6 +113,7 @@ function App() {
                 </div>
               }
             />
+            <Route path="/Testimonials" element={<Testimonials />} />
             <Route
               path="/terms"
               element={

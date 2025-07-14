@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // Import Link
 import {
   Globe, // Only Globe is kept, others removed as they will be images
 } from "lucide-react"; // Import Lucide icons
+import GlobalTeam from "./GlobalTeam";
 
 function Services() {
   const servicesData = [
@@ -119,8 +120,7 @@ function Services() {
         </div>
       </div>
 
-      {/* Assuming GlobalTeam is a separate component you want to render */}
-      {/* <GlobalTeam /> */}
+      <GlobalTeam />
     </section>
   );
 }
